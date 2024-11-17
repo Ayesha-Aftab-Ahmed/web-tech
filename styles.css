@@ -1,0 +1,193 @@
+/* body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+sidebar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+
+    background-color: transparent;
+    .img{
+        width: 200px;
+     height: 200px;
+     border-color: black;
+    }
+ a{
+    color: aliceblue;
+ }
+} */
+
+
+
+/* General reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #da9c9c;
+    border-bottom: 2px solid #9e4040;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+header h3 {
+    font-size: 18px;
+    color: #2d2c2c;
+}
+
+/* Sidebar styling */
+sidebar {
+    width: 25%;
+    height: 100%;
+    float: left;
+    
+    padding: 20px;
+    /* border-right: 2px solid #ddd; */
+}
+sidebar h2{
+    color: #bc6a6a;
+}
+.img img {
+    width: 100%;
+    max-width: 100px;
+    
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #e2c41b;
+    text-decoration: none;
+    font-weight: bold;
+}
+hr{
+    border-color: #c65e5e;
+}
+
+.contact a:hover {
+    text-decoration:none;
+    cursor: pointer;
+}
+
+hobbies, .achievements {
+    margin-bottom: 20px ;
+}
+
+hobbies h2, .achievements h2 {
+    font-size: 20px;
+    color: #bc6a6a;
+}
+
+hobbies ul, .achievements ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Main section styling */
+section {
+    width: 70%;
+    float: right;
+    padding: 20px;
+}
+
+section h1, section h2, section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Education ul, .school ul, .college ul, .skills ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.Experience table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.Experience th, .Experience td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Skills section styling */
+.skills {
+    margin-top: 20px;
+}
+
+.skills h2 {
+    color: #444;
+}
+
+.skills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Soft skills section */
+.softskills ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Video and Audio styling */
+.video, .youtube_video, audio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+}
+
+.youtube_video iframe {
+    max-width: 100%;
+    /* height: auto; */
+    border: 2px solid #ddd;
+}
+
+/* Footer or final elements */
+footer {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    background-color: #da9c9c;
+    border-bottom: 2px solid #9e4040;
+    color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    sidebar, section {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
