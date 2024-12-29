@@ -1,193 +1,218 @@
-/* body{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-sidebar{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-
-    background-color: transparent;
-    .img{
-        width: 200px;
-     height: 200px;
-     border-color: black;
-    }
- a{
-    color: aliceblue;
- }
-} */
-
-
-
-/* General reset and basic styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
 body {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #da9c9c;
-    border-bottom: 2px solid #9e4040;
-}
-
-header h1 {
-    font-size: 36px;
-    color: #000000;
-}
-
-header h3 {
-    font-size: 18px;
-    color: #2d2c2c;
-}
-
-/* Sidebar styling */
-sidebar {
-    width: 25%;
-    height: 100%;
-    float: left;
-    
-    padding: 20px;
-    /* border-right: 2px solid #ddd; */
-}
-sidebar h2{
-    color: #bc6a6a;
-}
-.img img {
-    width: 100%;
-    max-width: 100px;
-    
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.contact a {
-    color: #e2c41b;
-    text-decoration: none;
-    font-weight: bold;
-}
-hr{
-    border-color: #c65e5e;
-}
-
-.contact a:hover {
-    text-decoration:none;
-    cursor: pointer;
-}
-
-hobbies, .achievements {
-    margin-bottom: 20px ;
-}
-
-hobbies h2, .achievements h2 {
-    font-size: 20px;
-    color: #bc6a6a;
-}
-
-hobbies ul, .achievements ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-/* Main section styling */
-section {
-    width: 70%;
-    float: right;
-    padding: 20px;
-}
-
-section h1, section h2, section h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.Education ul, .school ul, .college ul, .skills ul {
-    list-style-type: none;
-    padding-left: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-.Experience table {
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
-.Experience th, .Experience td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4d;
 }
 
-/* Skills section styling */
-.skills {
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4d4d;
+}
+
+header {
+    background: url('images/tech.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+header .buttons {
     margin-top: 20px;
 }
 
-.skills h2 {
-    color: #444;
+header .buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
 }
 
-.skills ul {
-    list-style-type: disc;
-    margin-left: 20px;
+header .buttons .btn-primary {
+    background-color: #ff4d4d;
 }
 
-/* Soft skills section */
-.softskills ul {
-    list-style-type: disc;
-    margin-left: 20px;
+header .buttons .btn-secondary {
+    background-color: #333;
 }
 
-/* Video and Audio styling */
-.video, .youtube_video, audio {
-    margin-top: 20px;
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+#services h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#services .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+#services .card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.video video {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
+#services .card i {
+    font-size: 2rem;
+    color: #ff4d4d;
+    margin-bottom: 10px;
 }
 
-.youtube_video iframe {
-    max-width: 100%;
-    /* height: auto; */
-    border: 2px solid #ddd;
+#services .card img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
 }
 
-/* Footer or final elements */
+/* "Tareefen" Section */
+.tareefen .content{
+   margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 20px;
+}
+
+.tareefen .written-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.tareefen .content-images img {
+    max-width: 70%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* Form Section */
+.tareefen .form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tareefen .form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tareefen .form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tareefen button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tareefen button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer Section */
 footer {
-    clear: both;
+    background-color: #333;
+    color: white;
     padding: 20px;
     text-align: center;
-    background-color: #da9c9c;
-    border-bottom: 2px solid #9e4040;
-    color: #000000;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    sidebar, section {
-        width: 100%;
-        float: none;
-        padding: 10px;
-    }
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    header h1 {
-        font-size: 28px;
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ff4d4d;
+}
+.produ{
+    margin: 10px;
+    h1 {
+        
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        height: auto;
     }
 }
